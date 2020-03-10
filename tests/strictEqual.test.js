@@ -8,19 +8,19 @@ describe('strictEqual', () => {
 
   it('returns false if data types are not equal', () => {
     const checkOne = 5
-    const checkTwo = 'a'
+    const checkTwo = '5'
     const checkResult = strictEqual(checkOne, checkTwo)
     expect(checkResult).to.equal(false)
   })
   it('returns true if strings are equal', () => {
-    const checkOne = '5'
-    const checkTwo = '5'
+    const checkOne = 'str'
+    const checkTwo = 'str'
     const checkResult = strictEqual(checkOne, checkTwo)
     expect(checkResult).to.equal(true)
   })
   it('returns false if strings are not equal', () => {
-    const checkOne = '5'
-    const checkTwo = '-5'
+    const checkOne = 'str1'
+    const checkTwo = 'str2'
     const checkResult = strictEqual(checkOne, checkTwo)
     expect(checkResult).to.equal(false)
   })

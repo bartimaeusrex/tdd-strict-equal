@@ -1,6 +1,6 @@
 const strictEqual = (a, b) => {
 
-  if (Number(a) == Number(b) && a == b) {
+  if (typeof(a) == typeof(b) && a == b) {
     return true
   }
   else {
